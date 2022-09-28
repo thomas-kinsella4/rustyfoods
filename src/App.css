@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body {
+    background-color: #fefbce;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#address-search-comp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-image: url(https://horecatrends.com/wordpress/wp-content/uploads/Nice-Day-a-new-Chinese-takeout-restaurant-in-New-York-City.jpg?x51823);
+    background-size: 100% 150%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#address-search {
+    border-radius: 10px;
+    padding: 1em;
+    border: none;
+}
+
+#address-search:focus {
+    outline: none;
+}
+
+#navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #FF4742;
+}
+
+#logo {
+    width: 250px;
+}
+
+.nav-btn {
+    margin: 7px;
+    background: #fefbce;
+    border: 1px solid #fefbce;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .nav-btn:hover,
+  .nav-btn:active {
+    background-color: #FF4742;
+    background-position: 0 0;
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .nav-btn:active {
+    opacity: .5;
   }
-}
+
+  #description-div {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .description-section {
+      padding: 3em;
+      text-align: center;
+  }
+
+  .description-img {
+      height: 200px
+  }
+
+  .footer-link {
+      display: block;
+      padding-left: 1em;
+      margin-bottom: 0.5em;
+      text-decoration: none;
+      color: black
+  }
+
+  .footer-link:hover {
+      text-decoration: underline;
+  }
