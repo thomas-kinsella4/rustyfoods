@@ -4,6 +4,7 @@ import logo from "./assets/logo.png"
 
 function NavBar() {
     return (
+        <nav className="sticky">
         <div id="navdiv">
             <img src={logo} id="logo"></img>
             <div id="nav-btn-div">
@@ -11,6 +12,7 @@ function NavBar() {
                 <button className="nav-btn">Login</button>
             </div>
         </div>
+        </nav>
     )
 }
 

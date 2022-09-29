@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
 body {
     background-color: #fefbce;
 }
@@ -15,10 +17,15 @@ body {
     border-radius: 10px;
     padding: 1em;
     border: none;
+    width: 30em;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 0.85em;
+    color: #FF4742;
 }
 
 #address-search:focus {
     outline: none;
+    border-bottom: 3px solid #FF4742;
 }
 
 #navdiv {
@@ -43,7 +50,8 @@ body {
     color: black;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 0.1em;
     font-size: 16px;
     font-weight: 800;
     line-height: 16px;
@@ -64,6 +72,7 @@ body {
     background-color: #FF4742;
     background-position: 0 0;
     color: white;
+    transition: 0.25s;
   }
   
   .nav-btn:active {
@@ -76,22 +85,60 @@ body {
   }
 
   .description-section {
+      margin-top: 2em;
       padding: 3em;
       text-align: center;
   }
 
+  .description-text {
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 0.10em;
+  }
+
   .description-img {
-      height: 200px
+      height: 200px;
+  }
+
+  .description-header {
+    font-family: 'Paytone One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: #FF4742;
+  }
+
+  #middle-desc-section {
+    border-left: 1px solid #FF4742;
+    border-right: 1px solid #FF4742;
+  }
+
+  #footer-div {
+      padding-left: 1em;
+  }
+
+  #footer-header {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: #FF4742;
   }
 
   .footer-link {
-      display: block;
-      padding-left: 1em;
-      margin-bottom: 0.5em;
-      text-decoration: none;
-      color: black
+    font-family: 'Paytone One', sans-serif;
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: #FF4742;
   }
 
   .footer-link:hover {
-      text-decoration: underline;
+      color: #a03837;
+      transition: 0.25s;
+      transform: translate(0, -1.5px);
   }
+
+  .sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
